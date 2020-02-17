@@ -1,7 +1,7 @@
 <?php
 
 function take_turn(){
-    echo "hello!";
+   echo "\n hello!";
 }
 
 

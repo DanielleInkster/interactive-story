@@ -1,7 +1,7 @@
 <?php
 
 function take_turn(){
-   echo "\n hello!";
+   echo "*** \nWhat willl you do? \n***";
 }
 
 

@@ -8,17 +8,14 @@ function choose_action($action){
         echo run_action();
     } elseif(strtolower($action)=== 'fight'){
         echo fight_action();
-    } else {
-        echo "\n***\nInvalid selection. \nChoices are 'run', 'fight' or 'speak'.\n***\n";
-        $num_of_turns-=1;
-    }
+    } 
 };
 
 function speak_action(){
     echo "\n'What do you want?' you ask.";
     echo "\n Answer my riddle and I'll spare your life' the dragon replies. \n'What's orange and sounds like a parrot?' ";
     $response = readline("\n >> ");
-    while (strtolower($response) != "a carrot" && $num_of_turns < 3){ echo "\nWRONG! What's orange and sounds like a parrot?"; 
+    while (strtolower($response) != "a carrot" && $num_of_turns < 3){ echo "\nWRONG! What's orange and sounds like *a parrot*?"; 
         $response = readline("\n >> ");
         $num_of_tries++;
         if($num_of_tries === 2){

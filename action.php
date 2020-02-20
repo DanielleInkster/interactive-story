@@ -22,7 +22,7 @@ function fight_action(){
 
 function run_action(){
     echo "You turn to run back to the opening of the cave. \nThe dragon burns you to a crisp. \n";
-    echo "Better luck next time!";
+    echo "Better luck next time!\n\n ***GAME OVER***\n\n";
     exit();
 };
 ;

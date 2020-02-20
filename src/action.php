@@ -13,9 +13,9 @@
 
     function speak_action(){
         echo "\n'What do you want?' you ask.";
-        echo "\n Answer my riddle and I'll spare your life' the dragon replies. \n'What's orange and sounds like a parrot?' ";
+        echo "\n 'Answer my riddle and I'll spare your life' the dragon replies. \n'What's orange and sounds like a parrot?' ";
         $response = readline("\n >> ");
-            while (strtolower($response) != "a carrot" && $num_of_turns < 3){ echo "\nWRONG! What's orange and sounds like *a parrot*?"; 
+            while (strtolower($response) != "a carrot" && $num_of_turns < 3){ echo "\n'WRONG!' the dragon bellows. \n'What's orange and sounds like *a parrot*?'"; 
             $response = readline("\n >> ");
             $num_of_tries++;
                 if($num_of_tries === 2){
@@ -24,7 +24,7 @@
                 }
             }
         echo "\n'Well done!' cries the dragon. \n'I should spare your life...but I'm a hungry dragon and kind of a jerk.'\n";
-        echo "\nThe dragon swallows you whole. \nThat's what you get for trusting a dragon, I guess.\n";
+        echo "\nThe dragon swallows you whole. \nThat's what you get for trusting a dragon, I suppose.\n";
         echo "\n\n ***GAME OVER***\n\n";
         exit();
     };
